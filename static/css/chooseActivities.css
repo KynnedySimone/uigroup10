@@ -1,7 +1,8 @@
 body{
     margin: 0;
     background-color: white;
-
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -89,13 +90,13 @@ header ul li a {
 }
 
 #add-activity-button {
-    margin: 3rem;
+    margin: 3%;
 	background-color:rgba(91.00000217556953, 192.00000375509262, 235.0000011920929, 1);
-	width:15rem;
-	padding: 1rem;
+	width: 40%;
+	padding: 2%;
 	border: none;
 	color: white;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	border-top-left-radius:30px;
 	border-top-right-radius:30px;
 	border-bottom-left-radius:30px;
@@ -104,15 +105,18 @@ header ul li a {
 .activity-row{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 .activity-item{
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    justify-content: space-between;
 
     margin: 1rem;
+    width: 70%;
 
-    border: 2px solid black;
+    border: 1px solid black;
     border-top-left-radius:30px;
 	border-top-right-radius:30px;
 	border-bottom-left-radius:30px;
@@ -126,7 +130,7 @@ header ul li a {
     padding: 1rem;
 }
 .activity-img{
-    width: 12rem;
+    width: 30%;
 }
 .activity-highlight{
     display: flex;
@@ -144,10 +148,11 @@ header ul li a {
 }
 .title {
 	color:rgba(0, 0, 0, 1);
-	padding: 1rem 0rem;
+	padding: 2% 0rem;
 	font-family:Inter;
 	text-align:center;
-	font-size:3rem;
+	margin-top: 2%;
+	font-size:2rem;
 	letter-spacing:0;
 }
 #suggested-activities{
@@ -156,13 +161,13 @@ header ul li a {
     align-items:center;
 }
 #add-activity{
-    width: 38rem;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items:center;
 }
 #first-column{
-    padding: 3rem 0rem;
+    padding: 0 0rem;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -170,7 +175,7 @@ header ul li a {
     border-right: 1px solid black;
 }
 #second-column{
-    padding: 3rem 0rem;
+    padding: 0rem 0rem;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -179,43 +184,42 @@ header ul li a {
 #content{
     display: flex;
     flex-direction: row;
-    height: 100%;
+    flex-grow: 1;
 }
 .input-field-row{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .half-input-field {
     background-color:rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
-	height:4rem;
 	width: 49%;
 	border-top-left-radius:30px;
 	border-top-right-radius:30px;
 	border-bottom-left-radius:30px;
 	border-bottom-right-radius:30px;
-	margin-bottom: 2rem;
+	margin-bottom: 4%;
 
-	padding: 0.5rem 1rem;
+	padding: 2% 3%;
 
 	border: none;
-	font-size: 1.5rem;
+	font-size: 14px;
 	font-family:Inter;
 }
 .input-field {
     width: 100%;
 	background-color:rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
-	height:4rem;
 	border-top-left-radius:30px;
 	border-top-right-radius:30px;
 	border-bottom-left-radius:30px;
 	border-bottom-right-radius:30px;
-	margin-bottom: 2rem;
+	margin-bottom: 3%;
 
-	padding: 0.5rem 1rem;
+	padding: 2% 3%;
 
 	border: none;
-	font-size: 1.5rem;
+	font-size: 14px;
 	font-family:Inter;
 }
 .input-field::placeholder, .half-input-field::placeholder, .multiline-field::placeholder{
@@ -224,10 +228,10 @@ header ul li a {
 .multiline-field {
 	background-color:rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
 	width: 100%;
-	height: 8rem;
+	height: 96px;
 
 	border: none;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	padding: 0.5rem 1rem;
 
 	border-top-left-radius:30px;
@@ -241,14 +245,14 @@ header ul li a {
 	color:rgba(0, 0, 0, 1);
 	font-family:Inter;
 	text-align:left;
-	font-size:1.5rem;
+	font-size:1rem;
 	letter-spacing:0;
 }
 .activity-description {
 	color:rgba(0, 0, 0, 1);
 	font-family:Inter;
 	text-align:left;
-	font-size:1rem;
+	font-size:0.75rem;
 	letter-spacing:0;
 }
 .activity-highlights{
@@ -281,34 +285,37 @@ header ul li a {
 
 #trip-slider {
 	background-color:rgba(217, 217, 217, 1);
-	width: 36rem;
-	height:6rem;
-    border-radius:2.75rem;
 	padding: 0;
-	margin-bottom: 2rem;
 
+	width: 60%;
+
+    display: flex;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    margin-top: 2em;
 }
 .slider {
     display: inline-block;
 	width:49%;
 	margin: 0;
 	height:100%;
-	border-radius:2.75rem;
+	border-radius: 20px;
 	border: none;
 	background-color: transparent;
 }
 #selected-slider {
+	padding: 2%;
+
     display: inline-block;
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 	background-color:rgba(57.00000040233135, 55.00000052154064, 91.00000217556953, 1);
 }
 .form-text {
 	color:rgba(0, 0, 0, 1);
-	width:153px;
 	height:24px;
 	font-family:Inter;
 	text-align:left;
-	font-size:1.5rem;
+	font-size:14px;
 	letter-spacing:0;
 	padding: 0.5rem;
 }
@@ -318,6 +325,6 @@ header ul li a {
 	height:24px;
 	font-family:Inter;
 	text-align:left;
-	font-size:1.75rem;
+	font-size:1rem;
 	letter-spacing:0;
 }

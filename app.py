@@ -18,9 +18,9 @@ def profilePage():
 def viewItinerary():
     return render_template('viewItinerary.html')
 
-@app.route('/voteItinerary')
-def voteItinerary():
-    return render_template('voteItinerary')
+@app.route('/voteActivities')
+def voteActivities():
+    return render_template('voteActivities.html')
 
 @app.route('/chooseActivities.html')
 def chooseActivities():

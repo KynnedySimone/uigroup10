@@ -328,3 +328,21 @@ header ul li a {
 	font-size:1rem;
 	letter-spacing:0;
 }
+
+/** activity popups **/
+
+#activity1{
+
+}
+
+#activity2{
+
+}
+
+#activity3{
+
+}
+
+.hidden {
+	display: none;
+}

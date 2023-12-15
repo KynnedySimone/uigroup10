@@ -117,7 +117,7 @@
         <section id="activity-details">
             <div> <!-- Description Container -->
                 <h1>Statue of Liberty</h1>
-                <center><p>Activity 5/10</p></center>
+                <center><p>Activity 1/5</p></center>
                 <div class="description_activity_image"></div>
                 <!--<img class="description_activity_image" src="statue.jpg" alt="activity image">-->
             </div>
@@ -126,20 +126,20 @@
                 <form action="/submit-your-form">
                     <div class="input-group">
                         <div class="half">
-                            <input type="text" placeholder="Cost Per Person">
+                            <input type="text" placeholder="Cost Per Person: $20">
                         </div>
                         <div class="half">
-                            <input type="text" placeholder="Duration">
+                            <input type="text" placeholder="Duration: 2hrs">
                         </div>
                     </div>
                     <div class="input-group">
-                        <input type="text" placeholder="Location">
+                        <input type="text" placeholder="Location: New York, NY 10004">
                     </div>
                     <div class="input-group">
-                        <input type="text" placeholder="Website">
+                        <input type="text" placeholder="Website: https://www.nps.gov/stli/index.htm">
                     </div>
                     <div class="input-group">
-                        <textarea placeholder="Description + why do you want to do this?"></textarea>
+                        <textarea placeholder="Description: The Statue of Liberty is a huge statue in New York, given by France to the U.S. It's a symbol of freedom and shows a lady holding a torch. People love to visit it because it's not just cool to look at, but it also stands for freedom and the friendship between France and the U.S. Plus, it's a neat piece of history and art to see up close!"></textarea>
                     </div>
                     <!--
                     <div class="input-group">
@@ -159,7 +159,7 @@
 
             <div class="activity_view_buttons">
                 <button class="view_buttons">Previous</button>
-                <button class="view_buttons">Next</button>
+                <button class="view_buttons"><a href="{{ url_for('voteActivities2') }}">Next</a></button>
             </div>
         </section>
     </div>

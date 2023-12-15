@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: white;
+    font-family:Inter;
 }
 
 header {
@@ -92,6 +93,11 @@ header ul li a {
     padding: 15px 0;
     box-shadow: none;
     cursor: pointer;
+}
+
+.slider a{
+    text-decoration: none; /* Removes the underline */
+    color: black;          /* Sets the color to black */
 }
 
 #selected-slider {

@@ -12,7 +12,6 @@ header {
 	align-items: center;
 	background-color: #5BC0EB;
 	height: 6em;
-	padding-right: 20px;
 	font-family:Inter;
 }
 
@@ -54,6 +53,7 @@ header ul li a {
 
 .profile-icon {
 	width: 3em;
+	padding-right: .2em;
 }
 
 .site-logo {
@@ -145,6 +145,12 @@ header ul li a {
 	border: none;
 	background-color: transparent;
 }
+
+.slider a{
+	text-decoration: none; /* Removes the underline */
+	color: black;          /* Sets the color to black */
+}
+
 #selected-slider {
     display: inline-block;
 	padding: 3%;

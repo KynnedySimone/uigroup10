@@ -4,6 +4,7 @@ document.getElementById('add-activity-button').addEventListener('click', functio
     if(clickcount > 0){
         document.getElementById('activity2').classList.remove('hidden');
     } else{
+        document.getElementById('instructions').classList.add('hidden');
         document.getElementById('activity3').classList.remove('hidden');
         clickcount++
         console.log("incremented count")

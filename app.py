@@ -26,6 +26,10 @@ def viewItinerary():
 def voteActivities():
     return render_template('voteActivities.html')
 
+@app.route('/tripBudget')
+def tripBudget():
+    return render_template('tripBudget.html')
+
 @app.route('/chooseActivities.html')
 def chooseActivities():
     return render_template('chooseActivities.html')

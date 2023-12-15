@@ -12,7 +12,10 @@ html, body {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
+    height: 100vh;
 }
 
 header {
@@ -117,12 +120,35 @@ header ul li a {
     color: #BABABA;
 }
 
-.itinerary_item{
-    min-height: 5em;
-    background-color: #D9D9D9;
+.itinerary_item {
+    min-height: 7em;
     border-radius: 30px;
     margin-top: 1em;
-    width: 25em;
+    width: 30em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0;
+    border: 1px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.itin_short_description{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+.freetime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* RANKINGS SECTION STYLE */
@@ -154,6 +180,7 @@ header ul li a {
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
+    width: 35em;
 }
 
 .rank{
@@ -173,10 +200,29 @@ header ul li a {
 
 .activity_image{
     padding-left: 12em;
-    background-image: url("../images/statue.jpg");
     background-size: cover;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+}
+
+#image1{
+    background-image: url("../images/statue.jpg");
+}
+
+#image2{
+    background-image: url("../images/met museum.jpg");
+}
+
+#image3{
+    background-image: url("../images/hudson yards lights.png");
+}
+
+#image4{
+    background-image: url("../images/winter village.jpg");
+}
+
+#image5{
+    background-image: url("../images/NYC_Central_Park_Horse_Carriage.jpg");
 }
 
 .activity_time_cost_score_details{

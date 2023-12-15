@@ -13,6 +13,7 @@ html, body {
 
 body {
     font-family: Arial, sans-serif;
+    height: 100%;
 }
 
 header {
@@ -130,10 +131,30 @@ header ul li a {
 
 .activity_image{
     padding-left: 12em;
-    background-image: url("../images/statue.jpg");
+    /**background-image: url("../images/statue.jpg");**/
     background-size: cover;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+}
+
+#image1{
+    background-image: url("../images/statue.jpg");
+}
+
+#image2{
+    background-image: url("../images/winter village.jpg");
+}
+
+#image3{
+    background-image: url("../images/hudson yards lights.png");
+}
+
+#image4{
+    background-image: url("../images/met museum.jpg");
+}
+
+#image5{
+    background-image: url("../images/NYC_Central_Park_Horse_Carriage.jpg");
 }
 
 .activity_time_cost_score_details{

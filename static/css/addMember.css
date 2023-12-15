@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5BC0EB;
+    height: 6em;
+    padding-right: 20px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin: 0 4em;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-link.active::before {
+    content: '';
+    position: absolute;
+    top: -2.5em;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: white;
+    z-index: 10;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+}
+
+.logo {
+    width: 15em;
+}
+
+.profile-icon {
+    width: 3em;
+}
+
+.blue-bg {
+    background-color: #5BC0EB;
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.trip-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    padding: 2% 16%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #FFFFFF;
+    width: 30%;
+    height: 60%;
+    border-radius: 30px;
+}
+
+#trip-slider {
+    background-color: #D9D9D9;
+    width: 100%;
+    border-radius: 2.75rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.slider {
+    flex-grow: 1;
+    border-radius: 2.75rem;
+    border: none;
+    background-color: transparent;
+    padding: 15px 0;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+#selected-slider {
+    background-color: #39375B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form-text {
+    color: #000000;
+    font-family: Inter;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 0;
+    padding: 0.5rem;
+}
+
+.slider-selected-text {
+    color: #FFFFFF;
+    font-family: Inter;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 0;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-top: 50px;
+    color: #000000;
+    font-family: Inter;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.people-container {
+    background: #D9D9D9;
+    border-radius: 12px;
+    width: 325px; /* Ensure this is in pixels if it's not a typo */
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align to the top */
+    padding: 7px; /* Adjusted padding for inner spacing */
+    margin-right: 15px; /* Right margin as specified */
+}
+
+.person-entry {
+    background: white;
+    border-radius: 12px;
+    height: 35px; /* Height of the entry */
+    margin-bottom: 10px; /* Space between the entries */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align children to the left */
+    padding: 5px; /* Padding inside the entry for spacing */
+    margin-right: 1px;
+}
+
+.person-entry.non-editable .person-text,
+.person-entry.editable .input-box {
+    font-family: Inter;
+    font-size: 1rem;
+    color: black;
+    margin-left: 0px; /* Space from the icon or left edge */
+}
+
+.input-box {
+    width: calc(100% - 20px); /* Adjust width to account for icon space */
+    border: none;
+    outline: none; /* Remove focus outline */
+    font-family: Inter;
+    font-size: 1rem;
+    color: #A0A0A0;
+}
+
+.input-box::placeholder {
+    color: #A0A0A0;
+}
+
+/* Add styles for icons within person-entry */
+.icon-you {
+    /* Add your specific styles for the 'You' icon here */
+    width:45px;
+    height:45px;
+    border-radius: 50%;
+}
+
+.icon-add {
+    /* Add your specific styles for the 'Add' icon here */
+    width:45px;
+    height:45px;
+    border-radius: 50%;
+}

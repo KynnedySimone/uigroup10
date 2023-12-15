@@ -10,3 +10,6 @@ document.getElementById('add-activity-button').addEventListener('click', functio
     }
 });
 
+document.getElementById('plus-button').addEventListener('click', function() {
+        document.getElementById('activity1').classList.remove('hidden');
+});

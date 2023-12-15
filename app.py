@@ -34,5 +34,9 @@ def tripBudget():
 def chooseActivities():
     return render_template('chooseActivities.html')
 
+@app.route('/addMember.html')
+def addMember():
+    return render_template('addMember.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

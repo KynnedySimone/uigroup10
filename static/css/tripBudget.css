@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    background-color: white;
+}
+
+
+header {
+    font-family:Inter;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #5BC0EB;
+	height: 6em;
+	padding-right: 20px;
+
+}
+
+header ul {
+	list-style: none;
+	display: flex;
+}
+
+header ul li {
+	margin: 0 4em;
+}
+
+header ul li a {
+	text-decoration: none;
+	color: #333;
+}
+
+.nav-link.active::before {
+	content: ''; /* This is necessary for the pseudo-element to display */
+	position: absolute; /* Position it relative to its parent */
+	top: -2.5em; /* Align to the top of the link */
+	left: 0; /* Align to the left of the link */
+	right: 0; /* Align to the right of the link */
+	height: 10px; /* The thickness of the white bar */
+	background-color: white; /* The color of the bar */
+	z-index: 10; /* Ensure it's above the link text */
+}
+
+/* To position the pseudo-element correctly, the parent element needs to be positioned relative */
+.nav-link {
+	position: relative; /* This is necessary for absolute positioning inside */
+	display: inline-block; /* or block, depending on your layout */
+}
+
+.logo {
+	width: 15em;
+}
+
+.profile-icon {
+	width: 3em;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:Inter;
+}
+
+#budget-total{
+    display: inline-block;
+    background-color: #5BC0EB;
+    padding: 1.5%;
+    color: white;
+    margin: 2% 0% 1% 0%;
+
+    font-size: 24px;
+    font-family:Inter;
+
+    border-radius: 16px;
+}
+
+#budget-info{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 1%;
+}
+
+.ranked_activity{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+
+    padding: 0;
+    border: 1px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.activity-button{
+    width: 30%;
+    text-align: left;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.cost{
+    padding: 3%;
+    background-color: #5BC0EB;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    color: white;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    font-size: 24px;
+}
+
+.short_description{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 2%;
+}
+
+.activity-name{
+    padding: 0;
+    margin: 0;
+}
+
+.activity-info{
+    padding: 3% 0%;
+    font-size: 14px;
+    margin: 0;
+}
+
+.activity_image{
+    width: 30%;
+    background-image: url("../images/statue.jpg");
+    background-size: cover;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    min-width: 96px;
+}
+
+.activity_time_cost_score_details{
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+}
+
+.activity_time_cost_score_details li {
+    padding-right: 1em;
+}
+
+.activity-highlight{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.activity-highlights{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.highlight-icon{
+    width: 1.5rem;
+}

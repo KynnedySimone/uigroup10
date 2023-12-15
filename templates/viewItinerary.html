@@ -14,7 +14,7 @@
         <li><a href="{{ url_for('chooseActivities') }}">Choose Activities</a></li>
         <li><a href="{{ url_for('voteActivities') }}" >Rank Activities</a></li>
         <li><a href="{{ url_for('viewItinerary') }}" class="nav-link active">View Itinerary</a></li>
-        <li><a href="#budget">Trip Budget</a></li>
+        <li><a href="{{ url_for('tripBudget') }}">Trip Budget</a></li>
     </ul>
     <a href="{{ url_for('profilePage') }}">
         <img class="profile-icon" src="../static/images/profile.png" alt="profile">

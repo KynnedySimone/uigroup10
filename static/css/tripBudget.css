@@ -69,7 +69,7 @@ header ul li a {
     color: white;
     margin: 2% 0% 1% 0%;
 
-    font-size: 24px;
+    font-size: 4em;
     font-family:Inter;
 
     border-radius: 16px;
@@ -113,6 +113,11 @@ header ul li a {
     align-items: center;
 
     font-size: 24px;
+    width: 25%;
+}
+
+input::placeholder, textarea::placeholder {
+    color: white; /* Change to your desired color */
 }
 
 .short_description{
@@ -137,12 +142,32 @@ header ul li a {
 
 .activity_image{
     width: 30%;
-    background-image: url("../images/statue.jpg");
     background-size: cover;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     min-width: 96px;
 }
+
+#image1 {
+    background-image: url("../images/winter village.jpg");
+}
+
+#image2 {
+    background-image: url("../images/statue.jpg");
+}
+
+#image3 {
+    background-image: url("../images/NYC_Central_Park_Horse_Carriage.jpg");
+}
+
+#image4 {
+    background-image: url("../images/hudson yards lights.png");
+}
+
+#image5 {
+    background-image: url("../images/met museum.jpg");
+}
+
 
 .activity_time_cost_score_details{
     list-style: none;

@@ -21,7 +21,7 @@ header ul {
 }
 
 header ul li {
-	margin: 0 4em;
+	margin: 0 3.5em;
 }
 
 header ul li a {
@@ -69,7 +69,7 @@ header ul li a {
     color: white;
     margin: 2% 0% 1% 0%;
 
-    font-size: 4em;
+    font-size: 3em;
     font-family:Inter;
 
     border-radius: 16px;

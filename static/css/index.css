@@ -75,6 +75,9 @@ body {
 
 .LogoSphere {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 700px;
     height: 701px;
     left: 370px;
@@ -92,11 +95,10 @@ body {
 }
 
 .Tripharmony {
-    align-items: center;
     width: 573px;
     height: 105px;
     top: 320px;
-    left:200px;
+    left:180px;
     color: black;
     font-size: 60px;
     font-family: Inter;
@@ -125,4 +127,17 @@ body {
     font-family: Inter;
     font-weight: 400;
     word-wrap: break-word;
+}
+
+#CopyrightStuff{
+    font-size: 0.7em;
+}
+
+#MoreCopyrightStuff{
+    font-size: 0.7em;
+}
+
+a{
+    text-decoration: none; /* Removes the underline */
+    color: black;          /* Sets the color to black */
 }

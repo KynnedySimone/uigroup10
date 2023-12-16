@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <img class="logo" src="../static/images/logo.png" alt="Trip Harmony Logo">
+        <a href="{{ url_for('index') }}"><img class="logo" src="../static/images/logo.png" alt="Trip Harmony Logo"></a>
         <ul>
             <li><a href="{{ url_for('tripDetails') }}">Trip Details</a></li>
             <li><a href="{{ url_for('chooseActivities') }}">Choose Activities</a></li>
@@ -29,7 +29,7 @@
     <div id="content">
         <div id="budget-total">$150</div>
 
-        <div id="budget-info">The budget shown above is based on the lowest personal budget in teh group. <br/> <br/> Select an activity to edit the cost.</div>
+        <div id="budget-info">The budget shown above is based on the lowest personal budget in the group. <br/> <br/> Select an activity to edit the cost.</div>
 
         <button class="activity-button">
             <div class="ranked_activity">

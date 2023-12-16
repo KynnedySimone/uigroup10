@@ -2,145 +2,145 @@ html, body {
     margin: 0;
     padding: 0;
 }
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    body {
-        font-family:Inter;
-    }
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #5BC0EB;
-        height: 6em;
-        padding-right: 20px;
-    }
-    header ul {
-        list-style: none;
-        display: flex;
-    }
-    header ul li {
-        margin: 0 4em;
-    }
-    header ul li a {
-        text-decoration: none;
-        color: #333;
-    }
-    .nav-link.active::before {
-        content: '';
-        position: absolute;
-        top: -2.5em;
-        left: 0;
-        right: 0;
-        height: 10px;
-        background-color: white;
-        z-index: 10;
-    }
-    .nav-link {
-        position: relative;
-        display: inline-block;
-    }
-    .logo {
-        width: 15em;
-    }
-    .profile-icon {
-        width: 3em;
-    }
-    .BottomHalf {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        padding: 0;
-        width: 100%;
-        height: 12em;
-        background: #5BC0EB;
-        color: black;
-        font-size: 30px;
-        font-family: 'Inter', sans-serif;
-        font-weight: 400;
-    }
-    .MiddleContainer {
-        position: absolute;
-        top: 130px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 67%; /* Adjust the width percentage as needed */
-        max-width: 1111px; /* Set a maximum width if necessary */
-        height: 76vh; /* Adjust the height percentage as needed */
-        display: flex;
-        border-radius: 15px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.3); /* Two shadows, first is lighter, second is darker at the bottom */
-    }
-    
-    .LeftHalf,
-    .RightHalf {
-        flex: 1;
-        height: 100%;
-    }
-    
-    .LeftHalf {
-        position: relative;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-        background-color: white;
-    }
-    
-    .LeftHalf {
-        position: relative;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-        background-color: white;
-    }
-    
-    .ProfilePicture {
-        position: absolute;
-        top: 48px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 170px;
-        height: 170px;
-        background-color: #D9D9D9;
-        border-radius: 50%;
-    }
-    
-    #nameTextbox {
-        top: calc(48px + 170px + 40px); /* 48px (top of LeftHalf) + 170px (ProfilePicture height) + 40px (spacing) */
-    }
-    
-    #phoneTextbox {
-        top: calc(48px + 170px + 40px + 50px); /* Adjusted top for the second textbox */
-    }
-    
-    #emergencyTextbox {
-        top: calc(48px + 170px + 40px + 100px); /* Adjusted top for the third textbox */
-    }
-    
-    .TextBox {
-        width: 356px;
-        height: 36px;
-        background-color: #D9D9D9;
-        border-radius: 15px;
-        border: none;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        font-size: 16px;
-    }
-    
-    .TextBox::placeholder {
-        color: black;
-        opacity: 0.8;
-    }
-    #nameTextbox,
-    #phoneTextbox,
-    #emergencyTextbox { 
-        text-align: left;
-        padding-left: 10px; 
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:Inter;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5BC0EB;
+    height: 6em;
+    padding-right: 20px;
+}
+header ul {
+    list-style: none;
+    display: flex;
+}
+header ul li {
+    margin: 0 4em;
+}
+header ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.nav-link.active::before {
+    content: '';
+    position: absolute;
+    top: -2.5em;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: white;
+    z-index: 10;
+}
+.nav-link {
+    position: relative;
+    display: inline-block;
+}
+.logo {
+    width: 15em;
+}
+.profile-icon {
+    width: 3em;
+}
+.BottomHalf {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    height: 12em;
+    background: #5BC0EB;
+    color: black;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.MiddleContainer {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 67%; /* Adjust the width percentage as needed */
+    max-width: 1111px; /* Set a maximum width if necessary */
+    height: 76vh; /* Adjust the height percentage as needed */
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.3); /* Two shadows, first is lighter, second is darker at the bottom */
+}
+
+.LeftHalf,
+.RightHalf {
+    flex: 1;
+    height: 100%;
+}
+
+.LeftHalf {
+    position: relative;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: white;
+}
+
+.LeftHalf {
+    position: relative;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: white;
+}
+
+.ProfilePicture {
+    position: absolute;
+    top: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
+    height: 170px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
+#nameTextbox {
+    top: calc(48px + 170px + 40px); /* 48px (top of LeftHalf) + 170px (ProfilePicture height) + 40px (spacing) */
+}
+
+#phoneTextbox {
+    top: calc(48px + 170px + 40px + 50px); /* Adjusted top for the second textbox */
+}
+
+#emergencyTextbox {
+    top: calc(48px + 170px + 40px + 100px); /* Adjusted top for the third textbox */
+}
+
+.TextBox {
+    width: 356px;
+    height: 36px;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    border: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 16px;
+}
+
+.TextBox::placeholder {
+    color: black;
+    opacity: 0.8;
+}
+#nameTextbox,
+#phoneTextbox,
+#emergencyTextbox {
+    text-align: left;
+    padding-left: 10px;
 }
 
 .RightHalf {
